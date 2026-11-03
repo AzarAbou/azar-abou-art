@@ -4,475 +4,52 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Azar Abou | Colors of Jaffa</title>
- 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
- 
 <style>
- 
-:root{
---sand:#f8f4ee;
---dark:#1e1e1e;
---blue:#295676;
---accent:#b85c38;
---white:#ffffff;
-}
- 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
- 
-html{
-scroll-behavior:smooth;
-}
- 
-body{
-font-family:'Inter',sans-serif;
-background:var(--sand);
-color:var(--dark);
-line-height:1.8;
-}
- 
-h1,h2,h3{
-font-family:'Playfair Display',serif;
-font-weight:700;
-}
- 
-a{
-text-decoration:none;
-}
- 
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
- 
-nav{
-position:fixed;
-width:100%;
-background:rgba(255,255,255,0.95);
-backdrop-filter:blur(10px);
-padding:20px 0;
-z-index:999;
-}
- 
-.nav-content{
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
- 
-.logo{
-font-family:'Playfair Display',serif;
-font-size:1.6rem;
-font-weight:700;
-color:var(--blue);
-}
- 
-.nav-links a{
-margin-left:25px;
-color:var(--dark);
-font-weight:500;
-}
- 
-.hero{
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.45),
-rgba(0,0,0,.45)),
-url('adam.jpg');
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
-}
- 
-.hero-content h1{
-font-size:5rem;
-margin-bottom:20px;
-}
- 
-.hero-content p{
-font-size:1.3rem;
-max-width:700px;
-margin:auto;
-margin-bottom:30px;
-}
- 
-.btn{
-display:inline-block;
-padding:15px 35px;
-background:white;
-color:black;
-border-radius:40px;
-font-weight:600;
-transition:.3s;
-}
- 
-.btn:hover{
-background:var(--accent);
-color:white;
-}
- 
-section{
-padding:100px 0;
-}
- 
-.section-title{
-text-align:center;
-margin-bottom:50px;
-}
- 
-.section-title h2{
-font-size:3rem;
-color:var(--blue);
-}
- 
-.about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:center;
-}
- 
-.about-text p{
-margin-bottom:20px;
-}
- 
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
-}
- 
-.card{
-background:white;
-overflow:hidden;
-border-radius:10px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-transition:.4s;
-}
- 
-.card:hover{
-transform:translateY(-8px);
-}
- 
-.card img{
-width:100%;
-height:450px;
-object-fit:cover;
-}
- 
-.card-content{
-padding:25px;
-}
- 
-.card-content h3{
-margin-bottom:10px;
-color:var(--blue);
-}
- 
-.timeline{
-max-width:900px;
-margin:auto;
-text-align:center;
-}
- 
-.timeline-item{
-margin:30px 0;
-}
- 
-.quote{
-background:var(--blue);
-color:white;
-text-align:center;
-padding:120px 20px;
-}
- 
-.quote blockquote{
-font-size:2rem;
-font-family:'Playfair Display',serif;
-max-width:900px;
-margin:auto;
-}
- 
-.contact{
-text-align:center;
-}
- 
-.contact p{
-font-size:1.1rem;
-}
- 
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:40px;
-}
- 
-@media(max-width:768px){
- 
-.hero-content h1{
-font-size:3rem;
-}
- 
-.about{
-grid-template-columns:1fr;
-}
- 
-.section-title h2{
-font-size:2rem;
-}
- 
-}
- 
+:root{--sand:#f8f4ee;--dark:#1e1e1e;--blue:#295676;--accent:#b85c38;--white:#ffffff}
+*{margin:0;padding:0;box-sizing:border-box} html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--sand);color:var(--dark);line-height:1.8}
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:700} a{text-decoration:none}
+.container{width:90%;max-width:1200px;margin:auto}
+nav{position:fixed;width:100%;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);padding:20px 0;z-index:999}
+.nav-content{display:flex;justify-content:space-between;align-items:center}.logo{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--blue)}
+.nav-links a{margin-left:25px;color:var(--dark);font-weight:500}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url('adam.jpg');background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;text-align:center;color:white}
+.hero-content h1{font-size:5rem;margin-bottom:20px}.hero-content p{font-size:1.3rem;max-width:700px;margin:0 auto 30px}
+.btn{display:inline-block;padding:15px 35px;background:white;color:black;border-radius:40px;font-weight:600;transition:.3s}.btn:hover{background:var(--accent);color:white}
+section{padding:100px 0}.section-title{text-align:center;margin-bottom:50px}.section-title h2{font-size:3rem;color:var(--blue)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.about-text p{margin-bottom:20px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px}
+.card{background:white;overflow:hidden;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.08);transition:.4s}.card:hover{transform:translateY(-8px)}
+.card img{width:100%;height:450px;object-fit:cover}.card-content{padding:25px}.card-content h3{margin-bottom:10px;color:var(--blue)}
+.timeline{max-width:900px;margin:auto;text-align:center}.timeline-item{margin:30px 0}
+.quote{background:var(--blue);color:white;text-align:center;padding:120px 20px}.quote blockquote{font-size:2rem;font-family:'Playfair Display',serif;max-width:900px;margin:auto}
+.contact{text-align:center}.contact p{font-size:1.1rem}footer{background:#111;color:white;text-align:center;padding:40px}
+@media(max-width:768px){.hero-content h1{font-size:3rem}.about{grid-template-columns:1fr}.section-title h2{font-size:2rem}.nav-links a{margin-left:10px;font-size:.9rem}}
 </style>
 </head>
- 
 <body>
- 
-<nav>
-<div class="container nav-content">
-<div class="logo">Azar Abou</div>
- 
-<div class="nav-links">
-<a href="#about">About</a>
-<a href="#gallery">Gallery</a>
-<a href="#journey">Journey</a>
-<a href="#contact">Contact</a>
-</div>
-</div>
-</nav>
- 
-<section class="hero">
- 
-<div class="hero-content">
- 
-<h1>Colors of Jaffa</h1>
- 
-<p>
-Contemporary paintings inspired by memory, identity,
-transformation, and the Mediterranean light of Jaffa.
-</p>
- 
-<a href="#gallery" class="btn">Discover the Collection</a>
- 
-</div>
- 
-</section>
- 
-<section id="about">
- 
-<div class="container">
- 
-<div class="section-title">
-<h2>About the Artist</h2>
-</div>
- 
-<div class="about">
- 
-<div class="about-text">
- 
-<p>
-Born in Jaffa, Azar Abou creates paintings that explore the
-relationship between memory, color, emotion, and identity.
-Inspired by the unique landscapes and light of the Mediterranean,
-his work merges abstraction and figurative expression to create
-visual journeys that are both deeply personal and universally human.
-</p>
- 
-<p>
-Through vibrant palettes and expressive forms, each painting seeks
-to reveal the invisible narratives that connect people, places,
-and experiences.
-</p>
- 
-</div>
- 
-<div>
- 
-<h3>Artist Statement</h3>
- 
-<p>
-My paintings are rooted in the belief that color can express what
-words often cannot. I am fascinated by the spaces between memory
-and reality, solitude and connection, conflict and renewal.
-Painting is a dialogue between emotion and form, where each viewer
-discovers a unique interpretation.
-</p>
- 
-</div>
- 
-</div>
- 
-</div>
- 
-</section>
- 
-<section id="gallery">
- 
-<div class="container">
- 
-<div class="section-title">
-<h2>Featured Collection</h2>
-</div>
- 
-<div class="gallery">
- 
-<div class="card">
- 
-<img src="Adam.jpg" alt="Adam">
- 
-<div class="card-content">
- 
-<h3>Adam – The First Solitude</h3>
- 
-<p><strong>Oil on Canvas | 80 × 120 cm</strong></p>
- 
-<p>
-A meditation on origin and self-awareness. Adam stands at the
-threshold of existence, confronting the silence and wonder of
-being the first human presence.
-</p>
- 
-</div>
- 
-</div>
- 
-<div class="card">
- 
-<img src="conflict.jpg" alt="Between Fire and Light">
- 
-<div class="card-content">
- 
-<h3>Between Fire and Light</h3>
- 
-<p><strong>Oil on Canvas | 40 × 40 cm</strong></p>
- 
-<p>
-A dynamic exploration of tension and transformation. Powerful
-gestures and luminous colors create a landscape of uncertainty,
-movement, and growth.
-</p>
- 
-</div>
- 
-</div>
- 
-<div class="card">
- 
-<img src="dina.jpg" alt="Dina">
- 
-<div class="card-content">
- 
-<h3>Dina: Symphony of Becoming</h3>
- 
-<p><strong>Oil on Canvas | 100 × 120 cm</strong></p>
- 
-<p>
-A celebration of resilience, identity, and the enduring power of the soul to rise, evolve, and be heard.
- The painting invites viewers to look beyond the historical account
- and contemplate the human spirit's capacity to transform pain into wisdom. 
- In this interpretation, Dina is not defined by what happened to her but by what she becomes through it.
-"Within every silence lies a symphony waiting to be born..
-</p>
- 
-</div>
- 
-</div>
- 
-</div>
- 
-</div>
- 
-</section>
- 
-<section id="journey">
- 
-<div class="container">
- 
-<div class="section-title">
-<h2>The Journey</h2>
-</div>
- 
-<div class="timeline">
- 
-<div class="timeline-item">
-<h3>Origin</h3>
-<p>Adam – The First Solitude</p>
-</div>
- 
-<div class="timeline-item">
-↓
-</div>
- 
-<div class="timeline-item">
-<h3>Conflict</h3>
-<p>Between Fire and Light</p>
-</div>
- 
-<div class="timeline-item">
-↓
-</div>
- 
-<div class="timeline-item">
-<h3>Transformation</h3>
-<p>Dina: Symphony of Becoming</p>
-</div>
- 
-</div>
- 
-</div>
- 
-</section>
- 
-<section class="quote">
- 
-<blockquote>
-"Painting is the language through which color becomes memory and memory becomes form."
-</blockquote>
- 
-<p style="margin-top:30px;">Azar Abou</p>
- 
-</section>
- 
-<section id="contact">
- 
-<div class="container contact">
- 
-<div class="section-title">
-<h2>Contact</h2>
-</div>
- 
-<p>
-For exhibitions, acquisitions, commissions, and collaborations:
-</p>
- 
-<p style="margin-top:20px;font-size:1.3rem;">
-📧 azarabou2@gmail.com
-</p>
- 
-</div>
- 
-</section>
- 
-<footer>
- 
-<h3>AZAR ABOU</h3>
- 
-<p>Colors of Jaffa</p>
- 
-<p style="margin-top:10px;">
-© 2026 Azar Abou. All Rights Reserved.
-</p>
- 
-</footer>
- 
+<nav><div class="container nav-content"><div class="logo">Azar Abou</div><div class="nav-links"><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#journey">Journey</a><a href="#contact">Contact</a></div></div></nav>
+<section class="hero"><div class="hero-content"><h1>Colors of Jaffa</h1><p>Contemporary paintings inspired by memory, identity, transformation, and the Mediterranean light of Jaffa.</p><a href="#gallery" class="btn">Discover the Collection</a></div></section>
+<section id="about"><div class="container"><div class="section-title"><h2>About the Artist</h2></div><div class="about"><div class="about-text"><p>Born in Jaffa, Azar Abou creates paintings that explore the relationship between memory, color, emotion, and identity. Inspired by the unique landscapes and light of the Mediterranean, his work merges abstraction and figurative expression to create visual journeys that are both deeply personal and universally human.</p><p>Through vibrant palettes and expressive forms, each painting seeks to reveal the invisible narratives that connect people, places, and experiences.</p></div><div><h3>Artist Statement</h3><p>My paintings are rooted in the belief that color can express what words often cannot. I am fascinated by the spaces between memory and reality, solitude and connection, conflict and renewal. Painting is a dialogue between emotion and form, where each viewer discovers a unique interpretation.</p></div></div></div></section>
+<section id="gallery"><div class="container"><div class="section-title"><h2>Featured Collection</h2></div><div class="gallery">
+<div class="card"><img src="Adam.jpg" alt="Adam - The First Solitude"><div class="card-content"><h3>Adam - The First Solitude</h3><p><strong>Oil on Canvas | 80 × 120 cm</strong></p><p>A meditation on origin and self-awareness. Adam stands at the threshold of existence, confronting the silence and wonder of being the first human presence.</p></div></div>
+<div class="card"><img src="conflict.jpg" alt="Between Fire and Light"><div class="card-content"><h3>Between Fire and Light</h3><p><strong>Oil on Canvas | 40 × 40 cm</strong></p><p>A dynamic exploration of tension and transformation. Powerful gestures and luminous colors create a landscape of uncertainty, movement, and growth.</p></div></div>
+<div class="card"><img src="dina.jpg" alt="Dina: Symphony of Becoming"><div class="card-content"><h3>Dina: Symphony of Becoming</h3><p><strong>Oil on Canvas | 100 × 120 cm</strong></p><p>A celebration of renewal and continuous transformation. Flowing forms and rich colors merge figure and landscape into an evolving visual symphony.</p></div></div>
+<div class="card"><img src="creation-of-color.jpg" alt="Creation of Color"><div class="card-content"><h3>Creation of Color</h3><p><strong>Oil on Canvas | 40 × 40 cm</strong></p><p>Color becomes a living force of emotion, memory, and perception, capturing the moment when imagination begins to take form.</p></div></div>
+<div class="card"><img src="no name.jpg" alt="Whispers of Eden"><div class="card-content"><h3>Whispers of Eden</h3><p><strong>Oil on Canvas | 50 × 70 cm</strong></p><p>Through luminous greens, flowing contours, and expressive gestures, <em>Whispers of Eden</em> evokes an imagined landscape where memory, nature, and imagination coexist. The work reflects the delicate balance between harmony and transformation.</p></div></div>
+<div class="card"><img src="rooted-in-light.jpg" alt="Rooted in Light"><div class="card-content"><h3>Rooted in Light</h3><p><strong>Oil on Canvas | 50 × 70 cm</strong></p><p>Through interwoven ribbons of color and fluid contours, <em>Rooted in Light</em> explores the profound unity between humanity and nature. The standing figure appears to emerge from the landscape itself, dissolving the boundaries between body, memory, and place. Layers of vibrant greens, blues, reds, and ochres create a visual rhythm that speaks of growth, resilience, and the enduring search for belonging.</p></div></div>
+</div></div></section>
+<section id="journey"><div class="container"><div class="section-title"><h2>The Journey</h2></div><div class="timeline">
+<div class="timeline-item"><h3>Creation</h3><p>Creation of Color</p></div><div class="timeline-item">↓</div>
+<div class="timeline-item"><h3>Nature Awakens</h3><p>Whispers of Eden</p></div><div class="timeline-item">↓</div>
+<div class="timeline-item"><h3>Belonging</h3><p>Rooted in Light</p></div><div class="timeline-item">↓</div>
+<div class="timeline-item"><h3>Origin</h3><p>Adam - The First Solitude</p></div><div class="timeline-item">↓</div>
+<div class="timeline-item"><h3>Conflict</h3><p>Between Fire and Light</p></div><div class="timeline-item">↓</div>
+<div class="timeline-item"><h3>Transformation</h3><p>Dina: Symphony of Becoming</p></div>
+</div></div></section>
+<section class="quote"><blockquote>“Painting is the language through which color becomes memory and memory becomes form.”</blockquote><p style="margin-top:30px">Azar Abou</p></section>
+<section id="contact"><div class="container contact"><div class="section-title"><h2>Contact</h2></div><p>For exhibitions, acquisitions, commissions, and collaborations:</p><p style="margin-top:20px;font-size:1.3rem"><a href="mailto:azarabou2@gmail.com">azarabou2@gmail.com</a></p></div></section>
+<footer><h3>AZAR ABOU</h3><p>Colors of Jaffa</p><p style="margin-top:10px">© 2026 Azar Abou. All Rights Reserved.</p></footer>
 </body>
 </html>
